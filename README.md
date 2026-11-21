@@ -36,7 +36,7 @@ This repository is structured as a **standard FreeCAD Addon Manager Workbench** 
 ### Option A — Directly Inside FreeCAD's Addon Manager (Recommended)
 1. Open FreeCAD → **Edit → Preferences → Addon Manager**.
 2. Under **Custom Repositories**, click **+** and add:
-   - **URL:** `https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench`
+   - **URL:** `https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench`
    - **Branch:** `main`
 3. Open **Tools → Addon Manager**, search for **FreeCAD MCP Workbench**, and click **Install**.
 4. Restart FreeCAD.
@@ -48,15 +48,15 @@ Clone directly into your FreeCAD user `Mod/` directory:
 
 - **Linux:**
   ```bash
-  git clone https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench.git ~/.local/share/FreeCAD/Mod/FreeCADMCP
+  git clone https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench.git ~/.local/share/FreeCAD/Mod/FreeCADMCP
   ```
 - **macOS:**
   ```bash
-  git clone https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench.git "$HOME/Library/Application Support/FreeCAD/Mod/FreeCADMCP"
+  git clone https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench.git "$HOME/Library/Application Support/FreeCAD/Mod/FreeCADMCP"
   ```
 - **Windows (PowerShell):**
   ```powershell
-  git clone https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench.git "$env:APPDATA\FreeCAD\Mod\FreeCADMCP"
+  git clone https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench.git "$env:APPDATA\FreeCAD\Mod\FreeCADMCP"
   ```
 
 ### Activate the RPC Bridge in FreeCAD

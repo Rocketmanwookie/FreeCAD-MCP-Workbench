@@ -27,8 +27,8 @@ dependencies = [
 freecad-mcp = "freecad_mcp.server:main"
 
 [project.urls]
-Repository = "https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench"
-Issues = "https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench/issues"
+Repository = "https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench"
+Issues = "https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/freecad_mcp"]

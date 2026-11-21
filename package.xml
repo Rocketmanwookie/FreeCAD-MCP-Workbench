@@ -6,10 +6,10 @@
   <date>2026-11-21</date>
   <maintainer email="lierdg@outlook.com">Lierd Elliott Grant Jr.</maintainer>
   <license file="LICENSE">MIT</license>
-  <url type="repository" branch="main">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench</url>
-  <url type="bugtracker">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench/issues</url>
-  <url type="readme">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench/blob/main/README.md</url>
-  <url type="documentation">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench/blob/main/docs/ADDON_MANAGER_SUBMISSION.md</url>
+  <url type="repository" branch="main">https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench</url>
+  <url type="bugtracker">https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench/issues</url>
+  <url type="readme">https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench/blob/main/README.md</url>
+  <url type="documentation">https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench/blob/main/docs/ADDON_MANAGER_SUBMISSION.md</url>
   <icon>Resources/icons/FreeCADMCPWorkbench.svg</icon>
 
   <content>

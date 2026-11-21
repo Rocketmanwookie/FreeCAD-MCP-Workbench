@@ -6,14 +6,14 @@ This repository follows the official [FreeCAD Workbench Creation](https://wiki.f
 
 ## 1. Before Pushing to GitHub
 
-Replace `YOUR_USERNAME` with your GitHub username in:
+Replace `Rocketmanwookie` with your GitHub username in:
 - `package.xml` (`<url type="repository">`, `<url type="bugtracker">`, `<url type="readme">`, `<url type="documentation">`)
 - `pyproject.toml` (`[project.urls]`)
 - `README.md`
 
 Then push to GitHub on the `main` branch:
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench.git
+git remote add origin https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench.git
 git push -u origin main
 ```
 
@@ -25,7 +25,7 @@ Anyone on another computer can add this workbench directly inside FreeCAD's Addo
 
 1. Open FreeCAD → **Edit → Preferences → Addon Manager**.
 2. Under **Custom Repositories**, click **+** and enter:
-   - **Repository URL:** `https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench`
+   - **Repository URL:** `https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench`
    - **Branch:** `main`
 3. Click **OK**, then open **Tools → Addon Manager**.
 4. Search for **FreeCAD MCP Workbench** and click **Install**.
@@ -55,7 +55,7 @@ To make **FreeCAD MCP Workbench** appear by default in FreeCAD's built-in Addon 
 1. Fork [https://github.com/FreeCAD/FreeCAD-addons](https://github.com/FreeCAD/FreeCAD-addons).
 2. Clone your fork and add this repository as a submodule (or edit `.gitmodules` in alphabetical order):
    ```bash
-   git submodule add -b main https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench.git FreeCAD-MCP-Workbench
+   git submodule add -b main https://github.com/Rocketmanwookie/FreeCAD-MCP-Workbench.git FreeCAD-MCP-Workbench
    ```
 3. Commit and push to your fork:
    ```bash
