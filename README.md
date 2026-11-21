@@ -14,6 +14,7 @@
   <em><strong>Example built completely by prompt:</strong> Integrated NEMA 23 Servo + BK12 Ballscrew CNC Router Mount (6061-T6 Al) with exploded assembly, CalculiX FEA (SF = 21.7×), BOM, Cut Sheet &amp; 11×17" fillable machinist drawing — see <a href="examples/nema23-bk12-cnc-bracket/"><code>examples/nema23-bk12-cnc-bracket/</code></a>.</em>
 </p>
 
+<a href="https://buy.stripe.com/8x2cN64n6dUGcLabg0bsc00">Buy me a coffee.</a>
 ---
 
 ## What's Included in This Repository
