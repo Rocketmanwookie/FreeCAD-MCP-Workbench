@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cubeTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="cubeLeft" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#b91c1c"/>
+    </linearGradient>
+    <linearGradient id="cubeRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded dark CAD tile -->
+  <rect x="3" y="3" width="58" height="58" rx="12" fill="url(#bg)" stroke="#334155" stroke-width="2"/>
+
+  <!-- Isometric CAD block (FreeCAD red/blue/steel homage) -->
+  <polygon points="32,12 50,22 32,32 14,22" fill="url(#cubeTop)" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="14,22 32,32 32,52 14,42" fill="url(#cubeLeft)" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round"/>
+  <polygon points="50,22 32,32 32,52 50,42" fill="url(#cubeRight)" stroke="#0f172a" stroke-width="1.6" stroke-linejoin="round"/>
+
+  <!-- MCP Protocol circuit links -->
+  <g stroke="#38bdf8" stroke-width="2.4" stroke-linecap="round" fill="none">
+    <line x1="32" y1="22" x2="50" y2="12"/>
+    <line x1="32" y1="22" x2="14" y2="12"/>
+    <line x1="32" y1="32" x2="52" y2="48"/>
+  </g>
+
+  <!-- MCP hub & endpoint nodes -->
+  <circle cx="32" cy="22" r="4.2" fill="#f8fafc" stroke="#0284c7" stroke-width="2"/>
+  <circle cx="50" cy="12" r="3.6" fill="#38bdf8" stroke="#0f172a" stroke-width="1.5"/>
+  <circle cx="14" cy="12" r="3.6" fill="#38bdf8" stroke="#0f172a" stroke-width="1.5"/>
+  <circle cx="52" cy="48" r="4.0" fill="#22c55e" stroke="#0f172a" stroke-width="1.5"/>
+</svg>

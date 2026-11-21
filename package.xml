@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+  <name>FreeCAD MCP Workbench</name>
+  <description>Drive FreeCAD from AI coding assistants (Codex, Claude Code, Claude Desktop, Antigravity, Cursor) via the Model Context Protocol (MCP). Includes the in-FreeCAD XML-RPC bridge workbench, bundled MCP server package, toolbar icons, in-app AI client setup guide, and reusable CAD agent skill.</description>
+  <version>0.1.32</version>
+  <date>2026-11-21</date>
+  <maintainer email="lierdg@outlook.com">Lierd Elliott Grant Jr.</maintainer>
+  <license file="LICENSE">MIT</license>
+  <url type="repository" branch="main">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench</url>
+  <url type="bugtracker">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench/issues</url>
+  <url type="readme">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench/blob/main/README.md</url>
+  <url type="documentation">https://github.com/YOUR_USERNAME/FreeCAD-MCP-Workbench/blob/main/docs/ADDON_MANAGER_SUBMISSION.md</url>
+  <icon>Resources/icons/FreeCADMCPWorkbench.svg</icon>
+
+  <content>
+    <workbench>
+      <name>FreeCAD MCP</name>
+      <classname>FreeCADMCPWorkbench</classname>
+      <subdirectory>./</subdirectory>
+      <icon>Resources/icons/FreeCADMCPWorkbench.svg</icon>
+      <freecadmin>0.21.0</freecadmin>
+      <tag>MCP</tag>
+      <tag>AI</tag>
+      <tag>LLM</tag>
+      <tag>Automation</tag>
+      <tag>RPC</tag>
+      <tag>Codex</tag>
+      <tag>Claude</tag>
+      <tag>Antigravity</tag>
+    </workbench>
+  </content>
+</package>

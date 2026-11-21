@@ -1,0 +1,603 @@
+{
+ "ok": true,
+ "path": "/home/egrantjr/Projects/freecad-workspace/nema23-cnc-bracket/nema23-bk12-cnc-bracket.step",
+ "findings": [
+  {
+   "severity": "warning",
+   "code": "solver_note",
+   "message": "no pictures were drawn (no X display for OpenGL: OCP's Linux build draws through GLX on an X server, and neither the request (DISPLAY) nor the engine has one: install Xvfb and Mesa's OpenGL (Debian, Ubuntu: sudo apt-get install xvfb libgl1 libgl1-mesa-dri; Fedora: sudo dnf install xorg-x11-server-Xvfb mesa-libGL mesa-dri-drivers), and the engine starts Xvfb itself (run cad stop, then try again); or set DISPLAY); result.glb and the numbers are written",
+   "location": null,
+   "hint": null,
+   "items": [],
+   "rule": null,
+   "value": null,
+   "limit": null,
+   "unit": null,
+   "op": null,
+   "source": null,
+   "refs": []
+  }
+ ],
+ "summary": "solved Open CASCADE STEP translator 7.9 2 of nema23-bk12-cnc-bracket.step: peak 12.7415 MPa, safety factor 21.661",
+ "measurements": {
+  "max_von_mises_MPa": 12.7415,
+  "max_von_mises_gauss_MPa": 12.1117,
+  "max_von_mises_at_mm": [
+   25.1,
+   -57.5,
+   2.873
+  ],
+  "yield_MPa": 276.0,
+  "max_displacement_mm": 0.004172,
+  "max_displacement_at_mm": [
+   -0.008,
+   0.0,
+   76.0
+  ],
+  "applied_force_N": [
+   150.0,
+   -3800.0,
+   -907.7439
+  ],
+  "reaction_force_N": [
+   -150.0,
+   3799.9999,
+   907.7439
+  ],
+  "deformation_scale": 2500.0,
+  "safety_factor": 21.661,
+  "checks": [
+   {
+    "kind": "stress",
+    "label": "6061-T6 yield strength",
+    "value": 12.7415,
+    "limit": 276.0,
+    "unit": "MPa",
+    "ratio": 0.046166,
+    "close_at": 0.5,
+    "margin": 2.0,
+    "status": "passes",
+    "where": {
+     "ref": "Open CASCADE STEP translator 7.9 2/face 43",
+     "at": [
+      25.1,
+      -57.5,
+      2.873
+     ]
+    }
+   },
+   {
+    "kind": "displacement",
+    "label": "BK12 bearing pad deflection",
+    "value": 0.002958,
+    "limit": 0.05,
+    "unit": "mm",
+    "ratio": 0.059153,
+    "close_at": 0.9,
+    "status": "passes",
+    "where": {
+     "ref": "Open CASCADE STEP translator 7.9 2/face 10",
+     "at": [
+      22.039,
+      -60.023,
+      19.0
+     ]
+    },
+    "faces": [
+     "Open CASCADE STEP translator 7.9 2/face 10"
+    ]
+   },
+   {
+    "kind": "displacement",
+    "label": "NEMA 23 faceplate deflection",
+    "value": 0.004102,
+    "limit": 0.05,
+    "unit": "mm",
+    "ratio": 0.082045,
+    "close_at": 0.9,
+    "status": "passes",
+    "where": {
+     "ref": "Open CASCADE STEP translator 7.9 2/face 30",
+     "at": [
+      -0.346,
+      10.0,
+      76.0
+     ]
+    },
+    "faces": [
+     "Open CASCADE STEP translator 7.9 2/face 30"
+    ]
+   }
+  ],
+  "mesh": {
+   "elements": 24117,
+   "straightened": 2,
+   "nodes": 41111,
+   "dofs": 123333,
+   "size_mm": 5.2745,
+   "order": 2,
+   "mesher": "netgen",
+   "solver": "calculix 2.23 (C3D10)"
+  },
+  "timings": {
+   "mesh_s": 2.802,
+   "solve_s": 11.022,
+   "stress_s": 0.048
+  },
+  "study": {
+   "material": {
+    "name": "Aluminum 6061-T6",
+    "E_MPa": 68900,
+    "nu": 0.33,
+    "yield_MPa": 276,
+    "density_t_per_mm3": 2.7e-09
+   },
+   "fixtures": [
+    {
+     "faces": [
+      "face 39"
+     ],
+     "type": "roller"
+    },
+    {
+     "faces": [
+      "face 52",
+      "face 53",
+      "face 54",
+      "face 55",
+      "face 56",
+      "face 57",
+      "face 58",
+      "face 59",
+      "face 60",
+      "face 61",
+      "face 62",
+      "face 63",
+      "face 64",
+      "face 65",
+      "face 66",
+      "face 67",
+      "face 68",
+      "face 69",
+      "face 70",
+      "face 71",
+      "face 72",
+      "face 73",
+      "face 74",
+      "face 75"
+     ],
+     "type": "fixed"
+    }
+   ],
+   "loads": [
+    {
+     "faces": [
+      "face 42",
+      "face 43"
+     ],
+     "type": "force",
+     "vector_N": [
+      0,
+      -3500,
+      0
+     ]
+    },
+    {
+     "faces": [
+      "face 10"
+     ],
+     "type": "force",
+     "vector_N": [
+      0,
+      0,
+      -500
+     ]
+    },
+    {
+     "faces": [
+      "face 30"
+     ],
+     "type": "force",
+     "vector_N": [
+      150,
+      -300,
+      -400
+     ]
+    },
+    {
+     "type": "gravity",
+     "vector_g": [
+      0,
+      0,
+      -1
+     ]
+    }
+   ],
+   "margin": 2,
+   "checks": [
+    {
+     "kind": "stress",
+     "label": "6061-T6 yield strength"
+    },
+    {
+     "kind": "displacement",
+     "faces": [
+      "face 10"
+     ],
+     "limit_mm": 0.05,
+     "label": "BK12 bearing pad deflection"
+    },
+    {
+     "kind": "displacement",
+     "faces": [
+      "face 30"
+     ],
+     "limit_mm": 0.05,
+     "label": "NEMA 23 faceplate deflection"
+    }
+   ]
+  },
+  "material": {
+   "name": "Aluminum 6061-T6",
+   "E_MPa": 68900.0,
+   "nu": 0.33,
+   "yield_MPa": 276.0,
+   "density_t_per_mm3": 2.7e-09,
+   "source": "study"
+  },
+  "fixtures": [
+   {
+    "faces": [
+     "face 39"
+    ],
+    "type": "roller",
+    "reaction_N": [
+     0.0,
+     0.0,
+     862.9054
+    ]
+   },
+   {
+    "faces": [
+     "face 52",
+     "face 53",
+     "face 54",
+     "face 55",
+     "face 56",
+     "face 57",
+     "face 58",
+     "face 59",
+     "face 60",
+     "face 61",
+     "face 62",
+     "face 63",
+     "face 64",
+     "face 65",
+     "face 66",
+     "face 67",
+     "face 68",
+     "face 69",
+     "face 70",
+     "face 71",
+     "face 72",
+     "face 73",
+     "face 74",
+     "face 75"
+    ],
+    "type": "fixed",
+    "reaction_N": [
+     -150.0,
+     3799.9999,
+     44.8385
+    ]
+   }
+  ],
+  "connections": [],
+  "overlaps": [],
+  "refined": null,
+  "named_faces": {
+   "face 39": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 39",
+    "ordinal": 39,
+    "area": 17845.04232186862,
+    "center": [
+     5.551115123125783e-17,
+     4.057371992319984,
+     0.0
+    ]
+   },
+   "face 52": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 52",
+    "ordinal": 52,
+    "area": 131.94689145077132,
+    "center": [
+     -49.5,
+     -64.97380304394383,
+     5.0
+    ]
+   },
+   "face 53": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 53",
+    "ordinal": 53,
+    "area": 95.99999999999993,
+    "center": [
+     -45.3,
+     -57.50000000000001,
+     5.0
+    ]
+   },
+   "face 54": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 54",
+    "ordinal": 54,
+    "area": 131.94689145077132,
+    "center": [
+     -49.5,
+     -50.02619695605616,
+     5.0
+    ]
+   },
+   "face 55": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 55",
+    "ordinal": 55,
+    "area": 95.99999999999993,
+    "center": [
+     -53.7,
+     -57.50000000000001,
+     5.0
+    ]
+   },
+   "face 56": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 56",
+    "ordinal": 56,
+    "area": 131.94689145077132,
+    "center": [
+     49.5,
+     -64.97380304394383,
+     5.0
+    ]
+   },
+   "face 57": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 57",
+    "ordinal": 57,
+    "area": 95.99999999999993,
+    "center": [
+     53.7,
+     -57.50000000000001,
+     5.0
+    ]
+   },
+   "face 58": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 58",
+    "ordinal": 58,
+    "area": 131.94689145077132,
+    "center": [
+     49.5,
+     -50.02619695605616,
+     5.0
+    ]
+   },
+   "face 59": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 59",
+    "ordinal": 59,
+    "area": 95.99999999999993,
+    "center": [
+     45.3,
+     -57.50000000000001,
+     5.0
+    ]
+   },
+   "face 60": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 60",
+    "ordinal": 60,
+    "area": 131.94689145077132,
+    "center": [
+     -49.5,
+     4.5261969560561575,
+     5.0
+    ]
+   },
+   "face 61": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 61",
+    "ordinal": 61,
+    "area": 96.0,
+    "center": [
+     -45.29999999999999,
+     12.0,
+     5.0
+    ]
+   },
+   "face 62": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 62",
+    "ordinal": 62,
+    "area": 131.94689145077132,
+    "center": [
+     -49.5,
+     19.473803043943843,
+     5.0
+    ]
+   },
+   "face 63": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 63",
+    "ordinal": 63,
+    "area": 96.0,
+    "center": [
+     -53.70000000000001,
+     12.0,
+     5.0
+    ]
+   },
+   "face 64": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 64",
+    "ordinal": 64,
+    "area": 131.94689145077132,
+    "center": [
+     -49.5,
+     52.52619695605616,
+     5.0
+    ]
+   },
+   "face 65": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 65",
+    "ordinal": 65,
+    "area": 95.99999999999993,
+    "center": [
+     -45.3,
+     60.0,
+     5.0
+    ]
+   },
+   "face 66": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 66",
+    "ordinal": 66,
+    "area": 131.94689145077132,
+    "center": [
+     -49.5,
+     67.47380304394385,
+     5.0
+    ]
+   },
+   "face 67": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 67",
+    "ordinal": 67,
+    "area": 95.99999999999993,
+    "center": [
+     -53.7,
+     60.0,
+     5.0
+    ]
+   },
+   "face 68": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 68",
+    "ordinal": 68,
+    "area": 131.94689145077132,
+    "center": [
+     49.5,
+     4.5261969560561575,
+     5.0
+    ]
+   },
+   "face 69": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 69",
+    "ordinal": 69,
+    "area": 96.0,
+    "center": [
+     53.70000000000001,
+     12.0,
+     5.0
+    ]
+   },
+   "face 70": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 70",
+    "ordinal": 70,
+    "area": 131.94689145077132,
+    "center": [
+     49.5,
+     19.473803043943843,
+     5.0
+    ]
+   },
+   "face 71": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 71",
+    "ordinal": 71,
+    "area": 96.0,
+    "center": [
+     45.29999999999999,
+     12.0,
+     5.0
+    ]
+   },
+   "face 72": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 72",
+    "ordinal": 72,
+    "area": 131.94689145077132,
+    "center": [
+     49.5,
+     52.52619695605616,
+     5.0
+    ]
+   },
+   "face 73": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 73",
+    "ordinal": 73,
+    "area": 95.99999999999993,
+    "center": [
+     53.7,
+     60.0,
+     5.0
+    ]
+   },
+   "face 74": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 74",
+    "ordinal": 74,
+    "area": 131.94689145077132,
+    "center": [
+     49.5,
+     67.47380304394385,
+     5.0
+    ]
+   },
+   "face 75": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 75",
+    "ordinal": 75,
+    "area": 95.99999999999993,
+    "center": [
+     45.3,
+     60.0,
+     5.0
+    ]
+   },
+   "face 42": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 42",
+    "ordinal": 42,
+    "area": 242.7822802694192,
+    "center": [
+     -23.0,
+     -57.5,
+     9.2
+    ]
+   },
+   "face 43": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 43",
+    "ordinal": 43,
+    "area": 242.7822802694192,
+    "center": [
+     23.0,
+     -57.5,
+     9.2
+    ]
+   },
+   "face 10": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 10",
+    "ordinal": 10,
+    "area": 2450.195579110661,
+    "center": [
+     -3.3306690738754696e-16,
+     -58.00934709483599,
+     19.0
+    ]
+   },
+   "face 30": {
+    "ref": "Open CASCADE STEP translator 7.9 2/face 30",
+    "ordinal": 30,
+    "area": 2582.4148286858945,
+    "center": [
+     -5.2555220983807544e-15,
+     10.0,
+     45.70600819240252
+    ]
+   }
+  }
+ },
+ "status": "ok",
+ "reason": null,
+ "occurrence": "Open CASCADE STEP translator 7.9 2",
+ "written": [
+  "/home/egrantjr/Projects/freecad-workspace/nema23-cnc-bracket/fea-results/result.json",
+  "/home/egrantjr/Projects/freecad-workspace/nema23-cnc-bracket/fea-results/result.glb",
+  "/home/egrantjr/Projects/freecad-workspace/nema23-cnc-bracket/fea-results/result.vtu"
+ ],
+ "contact_tolerance_mm": null,
+ "parts": [],
+ "pairs": [],
+ "faces": []
+}

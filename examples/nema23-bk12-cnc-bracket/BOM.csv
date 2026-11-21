@@ -1,0 +1,11 @@
+Item,Part_Number,Category,Description,Qty,Material_Grade,Dimensions_mm,Notes
+1,N23-BK12-001,Manufactured,Integrated NEMA 23 + BK12 CNC Mount Bracket,1,6061-T6 Aluminum,120.0 x 156.0 x 76.0 (790 g),CNC billet or plate fab per CUTSHEET.md; tap 2x M5x0.8 in BK12 pad
+2,COTS-NEMA23,Drivetrain,NEMA 23 Servo Motor,1,Anodized Al / Steel,57.2 x 57.2 flange; 38.1 pilot; 8.0 shaft,47.14 mm bolt square; confirm shaft diameter before ordering coupler
+3,COTS-BK12,Drivetrain,BK12 Fixed Ballscrew Bearing Support Block,1,S45C Black-Oxide Steel,60.0 x 25.0 x 43.0; 25.0 shaft height,46.0 mm bolt pitch; includes locknut and oil seals
+4,COTS-CPL-8x10,Drivetrain,Flexible Jaw Shaft Coupler (98A PU Spider),1,7075/6061 Al + PU,OD 25-26 x L 30-32; bores 8 x 10,Fits 45.0 mm open coupler bay
+5,COTS-SFU1605,Drivetrain,SFU1605 / SFU1610 Ballscrew (BK12 machined end),1,Hardened Bearing Steel,OD 16; 12 bearing journal; 10 coupler end,Length per CNC router axis
+6,HW-M5x16-SHCS,Fastener,M5 x 16 mm Socket Head Cap Screw (ISO 4762),4,Class 12.9 Alloy Steel,M5 x 16,Motor faceplate mounting (use M5x25 + locknuts if motor ears are through-holes)
+7,HW-M5x25-SHCS,Fastener,M5 x 25 mm Socket Head Cap Screw (ISO 4762),2,Class 12.9 Alloy Steel,M5 x 25,BK12 block to tapped pedestal; use blue Loctite 243; torque 6.0 N-m
+8,HW-M8x20-SHCS,Fastener,M8 x 20 mm Socket Head Cap Screw (ISO 4762),6,Class 10.9/12.9 Steel,M8 x 20,CNC table wing mounting slots (8.4 x 18.0 mm); M6x20 also compatible
+9,HW-M8-WSHR,Fastener,M8 Flat Washer (DIN 125 / ISO 7089),6,Hardened Steel,OD 16.0 x ID 8.4 x T 1.6,Spreads clamp load across elongated table slots
+10,HW-M8-TNUT,Fastener,M8 CNC Table T-Slot Nut,6,Carbon Steel,Match table T-slot profile,Verify router table T-slot dimensions before ordering

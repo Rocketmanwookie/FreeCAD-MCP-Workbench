@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+build/
+
+# FreeCAD backups & temp files
+*.FCBak
+*.FCStd1
+*.FCStd2
+freecad_mcp_settings.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
