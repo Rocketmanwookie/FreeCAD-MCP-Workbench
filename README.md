@@ -42,7 +42,7 @@ This repository is structured as a **standard FreeCAD Addon Manager Workbench** 
 3. Open **Tools → Addon Manager**, search for **FreeCAD MCP Workbench**, and click **Install**.
 4. Restart FreeCAD.
 
-*(Once submitted to `FreeCAD/FreeCAD-addons`, users can skip steps 1–2 and install directly from the official Addon Manager list. See [docs/ADDON_MANAGER_SUBMISSION.md](docs/ADDON_MANAGER_SUBMISSION.md).)*
+*(Once added to the official FreeCAD 1.0+ Addon Index [`FreeCAD/Addons`](https://github.com/FreeCAD/Addons), users can skip steps 1–2 and install directly from the built-in Addon Manager list. See [docs/ADDON_MANAGER_SUBMISSION.md](docs/ADDON_MANAGER_SUBMISSION.md).)*
 
 ### Option B — Manual Clone to FreeCAD's `Mod/` Folder
 Clone directly into your FreeCAD user `Mod/` directory:
